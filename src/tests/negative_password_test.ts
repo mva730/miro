@@ -13,7 +13,7 @@ Data(wrongPasswords).Scenario("Wrong small password with others filled", async (
     await I.amOnPage(signInPage.url);
 
     console.log("Fill user data and submit");
-    await signInPage.signUp("Testman", "correct@mail.com", current.pass);
+    await signInPage.signUp("Testman", `${Date.now()}correct@mail.com`, current.pass);
 
     console.log("Verify password");
     await I.dontSee("Check your email");
@@ -30,7 +30,7 @@ Data(wrongPasswords).Scenario("Wrong long password with others filled", async ({
     await I.amOnPage(signInPage.url);
 
     console.log("Fill user data and submit");
-    await signInPage.signUp("Testman", "correct@mail.com", current.pass);
+    await signInPage.signUp("Testman", `${Date.now()}correct@mail.com`, current.pass);
 
     console.log("Verify password");
     await I.dontSee("Check your email");
