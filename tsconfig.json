@@ -1,0 +1,22 @@
+{
+  "ts-node": {
+    "files": true,
+    "ignore": [".*node_modules((?!@avito).)*$"]
+  },
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "strictNullChecks": true,
+    "types": ["codeceptjs", "node"],
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "exclude": ["node_modules", "src/**/*.js", "src/**/*.jsx"],
+  "compileOnSave": true
+}

@@ -1,0 +1,8 @@
+node_modules
+output
+build
+npm-debug.log
+.idea
+/*.iml
+/logs/
+/local/
